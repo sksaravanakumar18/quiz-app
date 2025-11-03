@@ -158,7 +158,7 @@ function AppContent() {
 // Main App component rendering the Router
 function App() {
     return (
-        <Router>
+        <Router basename="/quiz-app">
             <AppContent />
         </Router>
     );
