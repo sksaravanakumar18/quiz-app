@@ -1,0 +1,11 @@
+// tsconfig.node.json (Example structure)
+{
+  "compilerOptions": {
+    "composite": true, // <-- ADD THIS LINE (or set to true)
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
+    // ... other options specific to your Node/Vite config build
+  },
+  "include": ["vite.config.ts"] // Or whatever files this config is for
+}

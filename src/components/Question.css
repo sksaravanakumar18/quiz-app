@@ -1,0 +1,77 @@
+
+/* --- Question.css --- */
+.question-container { /* ... keep basic styles ... */
+  border: 1px solid #e0e0e0; padding: 20px 25px; margin-bottom: 25px;
+  border-radius: 8px; background-color: #ffffff; box-: 0 2px 5px rgba(0,0,0,0.08);
+  transition: background-color 0.3s ease, border-left-color 0.3s ease; 
+}
+.question-container.feedback-correct { border-left-color: #28a745; }
+.question-container.feedback-incorrect { border-left-color: #dc3545; }
+.context-box.question-context, .question-conditions { /* ... keep styles ... */
+    margin-bottom: 15px; padding: 10px 15px; font-size: 0.9em; border: 1px solid #e2e8f0; background-color: #f8fafc; border-radius: 4px; color: #475569;
+    overflow: auto;max-height: calc(100vh - 200px);
+}
+.question-conditions ul { /* ... keep styles ... */ }
+.question-conditions li { /* ... keep styles ... */ }
+.question-title { /* ... keep styles ... */
+    margin-top: 0; margin-bottom: 12px; color: #64748b; font-size: 0.9em; font-weight: 500; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;
+}
+.question-text { margin-bottom: 15px; }
+.question-text p, .question-text span { line-height: 1.6; color: #1e293b; margin-bottom: 10px; }
+.question-text span p { margin-bottom: 0; }
+.question-text pre { background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; border-radius: 4px; margin: 15px 0; }
+.question-text code { font-family: 'Courier New', Courier, monospace; font-size: 0.9em; color: #0f172a; line-height: 1.4; }
+.select-all-notice { font-style: italic; color: #64748b; margin-bottom: 15px; font-size: 0.9em; }
+.options-container { margin-top: 15px; }
+.option-label { display: block; margin-bottom: 10px; padding: 12px 15px; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer; transition: background-color 0.2s ease, border-color 0.2s ease; line-height: 1.5; }
+.option-label:hover { background-color: #f8fafc; border-color: #94a3b8; }
+.question-container.feedback-correct .option-label:hover,
+.question-container.feedback-incorrect .option-label:hover { background-color: inherit; border-color: inherit; }
+.option-label label { display: flex; align-items: center; cursor: pointer; }
+.option-label input[type="radio"],
+.option-label input[type="checkbox"] { margin-right: 12px; flex-shrink: 0; cursor: pointer; }
+.option-label input:disabled { cursor: not-allowed; }
+.option-label input:disabled + .option-key,
+.option-label input:disabled + .option-key + .option-value { opacity: 0.7; cursor: not-allowed; }
+.option-key { font-weight: bold; margin-right: 8px; color: #334155; }
+.option-value { color: #334155; flex-grow: 1; }
+.option-label.feedback-correct-option { background-color: #d1fae5; border-color: #6ee7b7 !important; }
+.option-label.feedback-incorrect-option { background-color: #fee2e2; border-color: #fca5a5 !important; }
+.option-label.feedback-missed-option { border: 1px solid #10b981 !important; }
+.feedback-icon { margin-left: auto; padding-left: 10px; font-weight: bold; font-size: 1.1em; }
+.feedback-icon.correct { color: #10b981; }
+.feedback-icon.incorrect { color: #ef4444; }
+.explanation-toggle { margin-top: 15px; text-align: left; }
+.explanation-toggle button { font-size: 0.85em; padding: 5px 10px; cursor: pointer; background-color: #f1f5f9; border: 1px solid #cbd5e1; color: #334155; border-radius: 4px; }
+.explanation-toggle button:hover { background-color: #e2e8f0; }
+.explanation-toggle button:disabled { opacity: 0.6; cursor: not-allowed; }
+.explanation-text { margin-top: 10px; padding: 15px; background-color:#f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.9em; line-height: 1.5; color: #475569; }
+.explanation-text small i { /* Italic is fine */ }
+.show-case-studies-buttons button, .basic-button {font-size: 0.75em; color:#334155;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f0f0f0;}
+  
+.basic-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+  .show-case-studies-buttons button{
+    margin-bottom: 5px;    
+  }
+  .border-green-500{
+    border-left: 5px solid #05c905;
+  }
+  .border-red-500{
+    border-left: 5px solid #fda3a3;
+  }
+  .bg-red-50{
+    background-color: rgb(252, 209, 204);
+  } 
+  .border-red-400{
+    border-color:#fda3a3;
+  }  
+  .opacity-70{
+    opacity: 0.7;
+  }

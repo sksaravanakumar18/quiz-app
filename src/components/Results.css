@@ -1,0 +1,108 @@
+
+/* --- Results.css --- */
+.results-container {
+    padding: 20px;
+  }
+  .retry-button { /* Style similar to back-button */
+    padding: 6px 12px;
+    font-size: 0.9em;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .retry-button:hover {
+    background-color: #5a6268;
+  }
+  .results-summary {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+  .results-duration {
+    font-size: 0.9em;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+  .detailed-results-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .result-item {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    paading:0 10px 20px 10px;
+  }
+  .result-item.correct { /* Optional overall border */
+    /* border-left: 5px solid #28a745; */
+    /* padding-left: 15px; */
+  }
+  .result-item.incorrect {
+    /* border-left: 5px solid #dc3545; */
+    /* padding-left: 15px; */
+  }
+  .result-question-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0f172a;
+    padding: 5px 10px;
+  }
+  .result-question-text{
+    padding: 5px 10px;
+  }
+  .result-question-text p,
+  .result-question-text span {
+    margin-bottom: 10px;
+  }
+  .result-question-text pre {
+      background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 10px;
+      overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;
+      border-radius: 4px; margin: 10px 0; font-size: 0.9em;
+  }
+  .result-question-text code {
+      font-family: 'Courier New', Courier, monospace; color: #0f172a;
+  }
+  .result-answers {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #e2e8f0;
+  }
+  .user-answer, .correct-answer {
+    margin: 8px 0;
+    font-size: 0.95em;
+  }
+  .user-answer.correct { color: #166534; /* Darker Green */ }
+  .user-answer.incorrect { color: #991b1b; /* Darker Red */ }
+  .correct-answer { color: #166534; /* Darker Green */ font-weight: 500;}
+  .result-item .explanation-text { /* Reuse explanation style */
+      margin-top: 10px;
+      padding: 12px;
+      background-color:#f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      font-size: 0.9em;
+      line-height: 1.5;
+      color: #475569;
+  }
+  
+  .past-results-list {
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #eee;
+      padding: 15px;
+      margin-top: 15px;
+      list-style: none;
+      background-color: #f8fafc;
+  }
+  .past-results-list li {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted #e2e8f0;
+  }
+  .past-results-list li:last-child {
+      border-bottom: none;
+  }

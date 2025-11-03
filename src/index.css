@@ -1,0 +1,267 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc; /* Light grey background */
+  color: #1e293b; /* Darker text */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Basic layout structure if needed without Tailwind */
+.container {
+    max-width: 900px; /* Example */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* You might need to add more basic styles here or in individual component CSS
+   to replace layout aspects previously handled by Tailwind (like flex, grid, spacing) *//* Reset / Base (Optional but recommended) */
+button, input[type="radio"], input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Utility Class Equivalents */
+
+/* === Spacing (Margin & Padding) === */
+.m-0 { margin: 0; }
+.m-auto { margin: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.my-3 { margin-top: 0.75rem; margin-bottom: 0.75rem; }
+.my-4 { margin-top: 1rem; margin-bottom: 1rem; }
+.my-6 { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+.my-8 { margin-top: 2rem; margin-bottom: 2rem; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-10 { margin-top: 2.5rem; }
+.mr-1 { margin-right: 0.25rem; }
+.mr-2 { margin-right: 0.5rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-5 { margin-bottom: 1.25rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.ml-2 { margin-left: 0.5rem; }
+.ml-4 { margin-left: 1rem; }
+.ml-auto { margin-left: auto; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-10 { padding: 2.5rem; }
+.px-1 { padding-left: 0.25rem; padding-right: 0.25rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.pl-2 { padding-left: 0.5rem; }
+.pl-3 { padding-left: 0.75rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pb-24 { padding-bottom: 6rem; } /* pb-24 */
+
+/* === Space Between (for direct children) === */
+/* Use !important cautiously if needed to override other margins */
+.space-y-1 > * + * { margin-top: 0.25rem; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+
+/* === Typography === */
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.italic { font-style: italic; }
+.leading-relaxed { line-height: 1.625; }
+.leading-normal { line-height: 1.5; }
+.whitespace-nowrap { white-space: nowrap; }
+.text-white { color: #ffffff; }
+.text-slate-400 { color: #94a3b8; } /* Approx */
+.text-slate-500 { color: #64748b; } /* Approx */
+.text-slate-600 { color: #475569; } /* Approx */
+.text-slate-700 { color: #334155; } /* Approx */
+.text-slate-800 { color: #1e293b; } /* Approx */
+.text-gray-500 { color: #6b7280; } /* Approx */
+.text-green-600 { color: #16a34a; } /* Approx */
+.text-green-700 { color: #15803d; } /* Approx */
+.text-green-800 { color: #166534; } /* Approx */
+.text-red-600 { color: #dc2626; } /* Approx */
+.text-red-700 { color: #b91c1c; } /* Approx */
+.text-amber-600 { color: #d97706; } /* Approx */
+.text-blue-600 { color: #2563eb; } /* Approx */
+.text-blue-800 { color: #1e40af; } /* Approx */
+.text-emerald-600 { color: #059669; } /* Approx */
+
+/* === Backgrounds === */
+.bg-white { background-color: #ffffff; }
+.bg-gray-100 { background-color: #f3f4f6; } /* Approx */
+.bg-gray-200 { background-color: #e5e7eb; } /* Approx */
+.bg-slate-50 { background-color: #f8fafc; } /* Approx */
+.bg-slate-100 { background-color: #f1f5f9; } /* Approx */
+.bg-green-50 { background-color: #f0fdf4; } /* Approx */
+.bg-green-100 { background-color: #dcfce7; } /* Approx */
+.bg-red-50 { background-color: #fef2f2; } /* Approx */
+.bg-red-100 { background-color: #fee2e2; } /* Approx */
+.bg-blue-50 { background-color: #eff6ff; } /* Approx */
+.bg-blue-500 { background-color: #3b82f6; } /* Approx */
+.bg-blue-600 { background-color: #2563eb; } /* Approx */
+
+/* === Borders === */
+.border { border-width: 1px; border-style: solid; border-color: #e5e7eb; } /* Default border color, adjust as needed */
+.border-t { border-top-width: 1px; border-style: solid; border-color: #e5e7eb; }
+.border-b {  border-color: #e5e7eb; }
+.border-l-2 { border-left-width: 2px; border-style: solid; border-color: #e5e7eb; }
+.border-transparent { border-color: transparent; }
+.border-slate-200 { border-color: #e2e8f0; } /* Approx */
+.border-slate-300 { border-color: #cbd5e1; } /* Approx */
+.border-slate-400 { border-color: #94a3b8; } /* Approx */
+.border-gray-300 { border-color: #d1d5db; } /* Approx */
+.border-green-200 { border-color: #bbf7d0; } /* Approx */
+.border-green-400 { border-color: #4ade80; } /* Approx */
+.border-green-500 { border-color: #22c55e; } /* Approx */
+.border-red-200 { border-color: #fecaca; } /* Approx */
+.border-red-300 { border-color: #fca5a5; } /* Approx */
+.border-red-400 { border-color: #f87171; } /* Approx */
+.border-red-500 { border-color: #ef4444; } /* Approx */
+.border-blue-200 { border-color: #bfdbfe; } /* Approx */
+.border-dashed { border-style: dashed; }
+.rounded { border-radius: 0.25rem; } /* rounded */
+.rounded-md { border-radius: 0.375rem; } /* rounded-md */
+.rounded-lg { border-radius: 0.5rem; } /* rounded-lg */
+.rounded-full { border-radius: 9999px; } /* rounded-full */
+.last\:border-b-0:last-child { border-bottom-width: 0; } /* last:border-b-0 */
+
+/* === Layout (Flexbox/Grid) === */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.flex-grow { flex-grow: 1; }
+.flex-wrap { flex-wrap: wrap; }
+.gap-2 { gap: 0.5rem; }
+
+/* === Sizing === */
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-md { max-width: 28rem; }
+.min-h-screen { min-height: 100vh; }
+.h-2\.5 { height: 0.625rem; } /* h-2.5 */
+.max-h-60 { max-height: 15rem; } /* max-h-60 */
+.h-screen { height: 100vh; }
+
+/* === Layout (Positioning/Z-Index) === */
+.absolute { position: absolute; }
+.relative { position: relative; }
+.sticky { position: sticky; }
+.top-4 { top: 1rem; }
+.right-4 { right: 1rem; }
+.bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-5 { z-index: 5; } /* Added from ContextDisplay */
+
+/* === Effects === */
+.shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+.opacity-70 { opacity: 0.7; }
+.transition { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+/* Simplified transition for example */
+.transition-duration-150 { transition-duration: 150ms; }
+.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* === Interactivity === */
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+.hover\:bg-slate-50:hover { background-color: #f8fafc; } /* Approx */
+.hover\:border-slate-400:hover { border-color: #94a3b8; } /* Approx */
+
+/* === Overflow === */
+.overflow-y-auto { overflow-y: auto; }
+.overflow-x-auto { overflow-x: auto; }
+
+/* === Lists === */
+.list-none { list-style-type: none; }
+.list-disc { list-style-type: disc; }
+.list-inside { list-style-position: inside; }
+
+/* === Accessibility === */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border-width: 0;
+}
+
+/* === Component Specific Base Styles (Examples) === */
+.basic-button {
+  /* Add your base button styles here - padding, border, font, etc. */
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.375rem; /* rounded-md */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  background-color: #e5e7eb; /* Default grey */
+  color: #1f2937;
+}
+/* Add variants if Button component uses them */
+.basic-button.primary { background-color: #2563eb; color: white; }
+.basic-button.secondary { background-color: #6b7280; color: white; }
+.basic-button.danger { background-color: #dc2626; color: white; }
+.basic-button.warning { background-color: #f59e0b; color: white; }
+.basic-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Example responsive styles based on md:p-6 */
+@media (min-width: 768px) {
+.md\:p-6 { padding: 1.5rem; }
+}
+
+/* Add styles for other custom classes like .selection-item, .quiz-header etc. as needed */
+.selection-item {
+display: flex;
+/* Add other base styles for selection items */
+}
+.selection-item-actions {
+display: flex;
+/* Add other base styles */
+}
+
+/* Add any other specific styles you need */
+.change-course{
+  margin-bottom: 10px;
+}

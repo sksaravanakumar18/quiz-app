@@ -1,0 +1,18 @@
+.basic-button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+.basic-button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+.basic-button:hover:not(:disabled) {
+    background-color: #ddd;
+}
+.basic-button.danger { background-color: #f8d7da; border-color: #f5c6cb; color: #721c24; } // Example
+.basic-button.warning { background-color: #fff3cd; border-color: #ffeeba; color: #856404; } // Example
+.basic-button.primary { background-color: #d1e7dd; border-color: #badbcc; color: #0f5132; } // Example
+.basic-button.secondary { background-color: #e2e3e5; border-color: #d6d8db; color: #41464b; } // Example

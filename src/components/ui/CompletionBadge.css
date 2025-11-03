@@ -1,0 +1,35 @@
+/* Example: Put in CompletionBadge.css and import './CompletionBadge.css' in the component */
+/* OR put in index.css */
+
+/* Base styles equivalent to:
+   ml-2 text-xs font-bold px-2 py-0.5 rounded-full whitespace-nowrap
+*/
+.completion-badge {
+    margin-left: 0.5rem; /* ml-2 */
+    font-size: 0.75rem; /* text-xs */
+    line-height: 1rem; /* Usually paired with text-xs */
+    font-weight: 700; /* font-bold */
+    padding-left: 0.5rem; /* px-2 */
+    padding-right: 0.5rem; /* px-2 */
+    padding-top: 0.125rem; /* py-0.5 */
+    padding-bottom: 0.125rem; /* py-0.5 */
+    border-radius: 9999px; /* rounded-full */
+    white-space: nowrap; /* whitespace-nowrap */
+    display: inline-block; /* To allow padding/margin */
+  }
+  
+  /* Passed status styles equivalent to:
+     bg-green-100 text-green-700
+  */
+  .completion-badge.passed {
+    background-color: #d1fae5; /* bg-green-100 approx */
+    color: #047857; /* text-green-700 approx */
+  }
+  
+  /* Failed status styles equivalent to:
+     bg-red-100 text-red-700
+  */
+  .completion-badge.failed {
+    background-color: #fee2e2; /* bg-red-100 approx */
+    color: #b91c1c; /* text-red-700 approx */
+  }

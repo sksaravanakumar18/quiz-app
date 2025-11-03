@@ -1,0 +1,64 @@
+/* src/components/Quiz.css */
+.quiz-active-container {
+    max-width: 900px; /* Adjust width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    position: relative; /* For absolute positioning of back button */
+  }
+  
+  .back-button {
+    position: absolute;
+    top: -23px;
+    right: 20px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .back-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .navigation-buttons {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between; /* Aligns buttons to ends */
+    align-items: center;
+  }
+  
+  .navigation-buttons button {
+     padding: 5px 10px;
+     font-size: 0.75em;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     cursor: pointer;
+     background-color: #f0f0f0;
+  }
+  .navigation-buttons button:hover:not(:disabled) {
+     background-color: #e0e0e0;
+  }
+   .navigation-buttons button:disabled {
+     opacity: 0.5;
+     cursor: not-allowed;
+  }
+  .pagination-index{
+    padding: 0 10px;
+    font-size: 0.75em;
+  }
+  .bottom-button-section .primary{ 
+    background-color:rgb(92 243 146);
+  }
+  .bottom-button-section{
+    float: right;
+  }
+  button.exit-quiz{
+    margin-right: 5px;
+    background-color: #f7c0b1; 
+    border-color: #f7f6b1;
+  }
